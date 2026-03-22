@@ -8,7 +8,7 @@ interface UseRevealOptions {
 export function useReveal<T extends HTMLElement>(
   options: UseRevealOptions = {}
 ): React.RefObject<T> {
-  const ref = useRef<T>(null);
+  const ref = useRef<T>(null as unknown as T);
   const { threshold = 0.15, rootMargin = '0px 0px -60px 0px' } = options;
 
   useEffect(() => {
