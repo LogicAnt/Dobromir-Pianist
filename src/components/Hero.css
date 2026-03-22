@@ -149,6 +149,12 @@
   }
 }
 
+@media (max-height: 800px) {
+  .hero__subtitle {
+    margin-top: 80px;
+  }
+}
+
 @media (max-width: 768px) {
   .hero__content {
     gap: 18px;
@@ -158,7 +164,6 @@
   .hero__subtitle {
     font-size: 1rem;
     letter-spacing: 0.22em;
-    margin-top: 0;
     margin-bottom: 40px;
   }
 
